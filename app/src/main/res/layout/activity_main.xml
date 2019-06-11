@@ -7,34 +7,36 @@
     android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/logo" />
+        android:id="@+id/imgLogo"
+        android:src="@drawable/logo"/>
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUserName"
         android:maxLines="1"
-        android:hint="Enter User Name"/>
-
+        android:hint="Enter User Name"
+        />
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextPassword"
         android:inputType="textPassword"
+        android:maxLines="1"
         android:hint="Enter Password"/>
-
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnSubmit"
         android:textColor="@color/colorPrimary"
-        android:text="Login"/>
+        android:text="Login" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list">
 
-
-
+    </ListView>
 </LinearLayout>
